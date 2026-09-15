@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quickwire - Send money internationally</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="navbar__inner">
+        <div class="navbar__logo">
+          <i class="fas fa-bolt text-white"></i>
+          <span>QUICKWIRE</span>
+          
+        </div>
+
+        <nav class="navbar__links">
+          <a href="#" class="navbar__link navbar__link--active">Send money</a>
+          <a href="#" class="navbar__link">Activity</a>
+          <a href="#" class="navbar__link">Help</a>
+        </nav>
+
+        <div class="navbar__avatar" aria-label="Account">Q</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <span class="hero__flask-badge" aria-hidden="true">🧪</span>
+
+        <div class="hero__intro">
+          <p class="eyebrow">International transfers, simplified</p>
+          <h1 class="hero__title">
+            Send money internationally, with clarity at every step.
+          </h1>
+          <p class="hero__subtitle">
+            Plan a sample transfer, preview transparent estimates, and follow a
+            secure, guided demo experience.
+          </p>
+        </div>
+
+        <div class="hero__note-card">
+          <div class="hero__note-icon">🛡️</div>
+          <div>
+            <h3>Designed for peace of mind</h3>
+            <p>
+              Clear estimates, sample delivery timing, and helpful information
+              before you continue.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero__columns">
+          <div class="form-card">
+            <h2>Plan a demo transfer</h2>
+            <p class="form-card__subtitle">
+              Complete the details below to see your estimated transfer.
+            </p>
+
+            <ol class="steps">
+              <li class="steps__item steps__item--active">
+                <span class="steps__circle">1</span> Details
+              </li>
+              <li class="steps__item">
+                <span class="steps__circle">2</span> Review
+              </li>
+              <li class="steps__item">
+                <span class="steps__circle">3</span> Confirmation
+              </li>
+            </ol>
+
+            <hr class="divider" />
+
+            <div class="field-row">
+              <div class="field">
+                <label for="sendingFrom">Sending from</label>
+                <select id="sendingFrom">
+                  <option>Nigeria</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sendingTo">Sending to</label>
+                <select id="sendingTo">
+                  <option>United Kingdom</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="youSend">You send</label>
+                <div class="field--split">
+                  <input type="text" id="youSend" value="100" />
+                  <select aria-label="Currency you send">
+                    <option>NGN</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="recipientCurrency">Recipient currency</label>
+                <select id="recipientCurrency">
+                  <option>GBP</option>
+                </select>
+              </div>
+            </div>
+
+            <hr class="divider" />
+
+            <h3 class="field-group-title">Recipient details</h3>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" placeholder="" />
+              </div>
+              <div class="field">
+                <label for="emailPhone">Email or phone</label>
+                <input type="text" id="emailPhone" placeholder="" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="destination">Destination option</label>
+              <select id="destination">
+                <option>Bank account — sample destination</option>
+              </select>
+            </div>
+
+            <button class="btn-continue" aria-label="Continue">→</button>
+          </div>
+
+          <div class="hero__sidebar">
+            <div class="estimate-card">
+              <div class="estimate-card__label">
+                <span>Live demo estimate</span>
+                <span aria-hidden="true">🧮</span>
+              </div>
+              <h3>Your transfer summary</h3>
+
+              <div class="estimate-row">
+                <span>Estimated exchange rate</span>
+                <strong>1 NGN = 0.0005 GBP</strong>
+              </div>
+              <div class="estimate-row">
+                <span>Estimated transfer fee</span>
+                <strong>1.5 NGN</strong>
+              </div>
+
+              <hr class="divider divider--dark" />
+
+              <div class="estimate-row">
+                <span>Recipient gets (estimate)</span>
+              </div>
+              <p class="estimate-card__big-number">0.05 GBP</p>
+
+              <div class="estimate-row">
+                <span>Estimated total cost</span>
+                <strong>101.5 NGN</strong>
+              </div>
+
+              <p class="estimate-card__disclaimer">
+                Sample values only. Rates and fees are not live quotes and may
+                differ in a real service.
+              </p>
+            </div>
+
+            <div class="delivery-card">
+              <div class="delivery-card__icon">🕒</div>
+              <div>
+                <h3>Sample delivery estimate</h3>
+                <p>
+                  Most demo routes display delivery in minutes to 1 business
+                  day. Actual availability is not provided here.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="activity-card">
+        <div class="activity-card__header">
+          <div>
+            <p class="eyebrow eyebrow--light">Saved demo transfers</p>
+            <h2>Recent activity</h2>
+          </div>
+          <button class="btn-outline">View all activity</button>
+        </div>
+        <p class="activity-card__empty">
+          No saved demo transfers yet. Create one above to see it here.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="feature-grid">
+        <div class="feature-card feature-card--green">
+          <div class="feature-card__icon">🛡️</div>
+          <h3>Secure-by-design demo</h3>
+          <p>
+            This prototype stores only the minimum demo transfer details needed
+            to show your activity.
+          </p>
+        </div>
+        <div class="feature-card feature-card--blue">
+          <div class="feature-card__icon">💲</div>
+          <h3>Fees shown upfront</h3>
+          <p>
+            Every calculation separates the estimated fee, exchange rate,
+            recipient amount, and total cost.
+          </p>
+        </div>
+        <div class="feature-card feature-card--yellow">
+          <div class="feature-card__icon">ⓘ</div>
+          <h3>Prototype notice</h3>
+          <p>
+            Real transfers require identity verification, eligibility checks,
+            regulated partners, and compliance review.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="faq">
+        <p class="eyebrow" style="text-align: center">Help centre</p>
+        <h2 class="faq__title">Questions, answered simply</h2>
+
+        <details class="faq__item">
+          <summary>How does the demo estimate work?</summary>
+          <p>It uses sample numbers only, so nothing here is a live quote.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Is my information sent anywhere?</summary>
+          <p>No. This prototype does not move money or contact any bank.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Can I use this for a real transfer?</summary>
+          <p>No, this is a clickable demo meant for showing the experience.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Who is Quickwire for?</summary>
+          <p>
+            Anyone who wants to preview a guided international transfer flow.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer-bar">
+      <p>
+        QUICKWIRE is a clickable prototype. No money movement, exchange-rate
+        quote, bank connection, identity verification, or regulatory approval is
+        available in this experience.
+      </p>
+    </footer>
+  </body>
+</html>
